@@ -4,52 +4,267 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .header-box
+    padding: 0 10px
 
+  .phone
+    font-size: 22px
+
+  .phone-code
+    font-size: 16px
+
+  .header-box-phone .header-box:last-child
+    padding-right: 10px
+
+  .special-offers-wrapper
+    padding: 0 35px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .gallery-slider
+    padding: 0 40px
+
+  footer
+    .logo
+      max-width: 200px
+
+  .copyright
+    max-width: 460px
+    margin: 0 auto
+    text-align: center
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  header
+    .logo
+      max-width: 185px
+    .logo-text
+      font-size: 6px
+      bottom: -8px
 
+  .links-callback__icon
+    margin: 0 10px 0 0
+
+  header
+    .menu
+      font-size: 13px
+    .phone
+      font-size: 16px
+    .phone-code
+      font-size: 12px
+    .links-callback
+      font-size: 11px
+
+  .header-bottom
+    padding: 18px 0
+
+  .header-center
+    padding: 15px 0 25px
+
+  .p-60
+    padding: 45px 0
+
+  .links-callback__icon
+    width: 30px
+    height: 30px
+    min-width: 30px
+    font-size: 13px
+
+  .footer-box
+    &:last-child
+      width: 100%
+      margin: 30px 0 0
+
+  .form-subscribe
+    margin: 10px 0 20px
+
+  .footer-top
+    padding: 60px 0 30px
+
+  .copyright
+    max-width: 300px
+    font-size: 10px
+
+  .footer-bottom
+    padding: 50px 0 20px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width : 800px)
+  .btn-burger
+    display: flex
 
+  header
+    background: #fff
+    box-shadow: 4px 5px 23px 0px rgba(20,32,61,0.1)
+    .links-callback__text
+      display: none
+    .header-box
+      padding: 0
+      border: none
+      margin: 0 10px 0 0
+    .links-callback__icon
+      margin: 0
+
+  .header-bottom
+    display: none
+
+  .header-center
+    padding: 10px 0 15px
+    .container
+      align-items: center
+
+  .header-box-phone
+    .header-box:last-child
+      padding-right: 0
+
+  .advantages-wrapper, .information-content
+    padding: 0 20px 0 0
+
+@media only screen and (max-width : 768px)
+  .p-60
+    padding: 40px 0
+
+  .header-top
+    display: none
+
+  h2
+    font-size: 30px
+
+  h3
+    font-size: 22px
+
+  .directions-company__box
+    width: 100%
+    margin: 0 0 30px
+    padding: 0 0 20px
+    border: none
+      bottom: 2px dashed rgba(43, 77, 164, 0.6)
+    &:last-child
+      margin: 0
+      padding: 0
+      border: none
+    &:first-child
+      padding: 0 0 20px
+
+  .directions-company__country:before
+    height: 100%
+
+  .advantages-wrapper, .information-content
+    padding: 0
+    width: 100%
+    margin: 0 0 30px
+
+  .info-box
+    width: 100%
+
+  .list-number li:before
+    font-size: 20px
+
+  .gallery-slider__box
+    max-width: none
+    width: 100%
+
+  .gallery-slider-row
+    justify-content: space-between
+    .gallery-slider__box-min
+      max-width: 49%
+
+  .gallery-slider-col
+    padding: 0
+
+  .footer-bottom .container
+    flex-direction: column
+    align-items: center
+
+  .copyright
+    margin: 10px auto 0
+    max-width: none
+    order: 1
+
+  footer
+    .logo
+      margin: 0 auto 10px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 576px)
+  .header-box-phone
+    flex-direction: column
+    align-items: flex-start
 
+  h2
+    font-size: 24px
+
+  h3
+    font-size: 18px
+
+  .slick-arrow
+    width: 25px
+    height: 35px
+
+  .special-offers-wrapper
+    padding: 0 25px
+
+  .gallery-slider
+    padding: 0 25px
+
+  .information-content .box-text ul
+    padding: 0 0 0 20px
+    li
+      width: 100%
+
+  .banner-section
+    padding: 20px 0
+
+  .footer-top
+    .container
+      align-items: flex-start
+
+  .footer-box
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+      width: 100%
+
+  .footer-contacts
+    margin: 20px 0 0
+
+  .form-subscribe
+    margin: 0
+    .form-group
+      flex-wrap: wrap
+      button
+        margin: 0 auto
+      label
+        margin: 0 0 10px
+        width: 100%
+
+@media only screen and (max-width : 480px)
+  header
+    .logo
+      max-width: 100px
+    .logo-text
+      display: none
+
+  header .links-callback__icon
+    width: 25px
+    height: 25px
+    min-width: 25px
+    font-size: 10px
+
+  header
+    .phone
+      font-size: 12px
+    .phone-code
+      font-size: 8px
+
+  .gallery-slider__box
+    height: 250px
+
+  .gallery-slider__box-min
+    height: 120px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-

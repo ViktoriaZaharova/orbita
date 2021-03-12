@@ -21,13 +21,35 @@ $('.special-offers-slider').slick({
         '<path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115\n' +
         '\tL120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667\n' +
         '\tc4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z"/>\n' +
-        '</svg>\n</button>'
+        '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 $('.special-offers-preview-slider').slick({
     slidesToShow: 3,
     asNavFor: '.special-offers-slider',
     arrows: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 $('.gallery-slider').slick({
@@ -52,5 +74,23 @@ $('.gallery-slider').slick({
         '<path d="M128.133,490.68c-5.891,0.011-10.675-4.757-10.686-10.648c-0.005-2.84,1.123-5.565,3.134-7.571l227.136-227.115\n' +
         '\tL120.581,18.232c-4.171-4.171-4.171-10.933,0-15.104c4.171-4.171,10.933-4.171,15.104,0l234.667,234.667\n' +
         '\tc4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z"/>\n' +
-        '</svg>\n</button>'
+        '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: false
+            }
+        }
+    ]
+});
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+   $('.mobile-menu').fadeToggle();
+});
+
+$('.btn-close').on("click", function () {
+   $('.mobile-menu').fadeOut();
 });
