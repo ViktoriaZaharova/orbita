@@ -228,14 +228,14 @@ button {
     max-width: 115px;
     text-align: right; }
 
-h2 {
+h2, .h2 {
   width: 100%;
   text-align: center;
   position: relative;
   font-size: 36px;
   margin: 0 auto 30px; }
 
-h3 {
+h3, .h3 {
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 20px; }
@@ -495,6 +495,28 @@ header {
   header .logo {
     margin: 0 auto 0 0; }
 
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.fake-link {
+  color: #585858;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 105px;
+  margin: 10px 0 0 auto;
+  width: 100%;
+  cursor: pointer; }
+
 .header-center {
   padding: 15px 0 35px; }
   .header-center .container {
@@ -502,15 +524,50 @@ header {
         -ms-flex-align: stretch;
             align-items: stretch; }
 
+.list-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 0 0; }
+  .list-message li a {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .list-message li .whatsapp-link {
+    width: 34px;
+    height: 34px; }
+
 .header-box-phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-  .header-box-phone .header-box:last-child {
-    padding-right: 25px; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 auto;
+  border-left: 1px solid #a3a3a3; }
+  .header-box-phone .header-box {
+    border: none; }
+    .header-box-phone .header-box:last-child {
+      padding: 0 25px; }
 
 .header-box {
   padding: 0 25px;
@@ -523,6 +580,10 @@ header {
   border-left: 1px solid #a3a3a3; }
   .header-box:last-child {
     padding-right: 0; }
+
+.schedule {
+  font-size: 12px;
+  margin: 8px auto 0; }
 
 .phone {
   font-size: 26px;
@@ -664,7 +725,10 @@ header {
   font-size: 16px;
   font-weight: 700;
   max-width: 400px;
-  margin: auto 0 0; }
+  margin: auto 0 0;
+  color: #fff; }
+  .special-offers-slider__title:hover {
+    color: #e4861f; }
 
 .term {
   font-size: 14px;
@@ -733,6 +797,8 @@ header {
     color: #000; }
     .list-country li a:hover {
       color: #2b4da4; }
+      .list-country li a:hover .country-name {
+        text-decoration: none; }
 
 .country-flag {
   min-width: 45px;
@@ -775,6 +841,10 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     color: #000; }
+    .types-of-recreation li a:hover {
+      color: #2b4da4; }
+      .types-of-recreation li a:hover .types-of-recreation__text {
+        text-decoration: none; }
 
 .types-of-recreation__icon {
   width: 45px;
@@ -800,11 +870,16 @@ header {
   display: inline-block;
   margin: 0 14px 20px 0;
   color: #000; }
+  .list-directions a:hover {
+    color: #2b4da4;
+    text-decoration: none; }
   .list-directions a:last-child {
     margin-right: 0; }
 
 .list-directions .color-accent {
   color: #2b4da4; }
+  .list-directions .color-accent:hover {
+    color: #e4861f; }
 
 .list-directions .color-orange {
   color: #e4861f; }
@@ -1006,7 +1081,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
-  .footer-box h4 {
+  .footer-box .h4 {
     font-weight: bold;
     font-size: 16px;
     margin: 0 0 10px;
@@ -1016,7 +1091,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .footer-box h4 i {
+    .footer-box .h4 i {
       color: #e4861f;
       margin: 0 10px 0 0;
       font-size: 22px; }
@@ -1040,7 +1115,7 @@ footer {
 
 .form-subscribe {
   margin: 10px 0 auto; }
-  .form-subscribe h5 {
+  .form-subscribe .h5 {
     color: #a1c0e5;
     font-size: 14px;
     margin: 0 0 10px;
@@ -1238,7 +1313,14 @@ footer {
   .header-box-phone .header-box:last-child {
     padding-right: 0; }
   .advantages-wrapper, .information-content {
-    padding: 0 20px 0 0; } }
+    padding: 0 20px 0 0; }
+  .header-box-phone {
+    border: none;
+    margin: 0 auto; }
+    .header-box-phone .header-box {
+      margin: 0; }
+  .list-message {
+    margin: 0 10px 0 0; } }
 
 @media only screen and (max-width: 768px) {
   .p-60 {
@@ -1346,13 +1428,24 @@ footer {
         margin: 0 auto; }
       .form-subscribe .form-group label {
         margin: 0 0 10px;
-        width: 100%; } }
-
-@media only screen and (max-width: 480px) {
+        width: 100%; }
+  .list-message li a {
+    width: 24px;
+    height: 24px; }
+  .list-message li .whatsapp-link {
+    width: 26px;
+    height: 26px; }
   header .logo {
     max-width: 100px; }
   header .logo-text {
     display: none; }
+  .fake-link {
+    margin: 2px 0 0 0;
+    font-size: 6px; } }
+
+@media only screen and (max-width: 480px) {
+  .schedule {
+    font-size: 7px; }
   header .links-callback__icon {
     width: 25px;
     height: 25px;
@@ -1365,8 +1458,19 @@ footer {
   .gallery-slider__box {
     height: 250px; }
   .gallery-slider__box-min {
-    height: 120px; } }
+    height: 120px; }
+  .list-message {
+    margin: 0 5px 0 0; }
+    .list-message li a {
+      width: 18px;
+      height: 18px; }
+    .list-message li .whatsapp-link {
+      width: 20px;
+      height: 20px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 380px) {
+  header .list-message {
+    display: none; }
+  header .schedule {
+    display: none; } }

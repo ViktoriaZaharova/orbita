@@ -51,17 +51,55 @@ header
   .logo
     margin: 0 auto 0 0
 
+.logo-wrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.fake-link
+  color: #585858
+  font-size: 10px
+  font-weight: bold
+  text-transform: uppercase
+  max-width: 105px
+  margin: 10px 0 0 auto
+  width: 100%
+  cursor: pointer
+
 
 .header-center
   padding: 15px 0 35px
   .container
     align-items: stretch
 
+.list-message
+  display: flex
+  align-items: center
+  margin: 0 20px 0 0
+  li
+    a
+      width: 30px
+      height: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+    .whatsapp-link
+      width: 34px
+      height: 34px
+
 .header-box-phone
   display: flex
-  align-items: stretch
-  .header-box:last-child
-    padding-right: 25px
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 auto
+  border-left: 1px solid $text
+  .header-box
+    border: none
+    &:last-child
+      padding: 0 25px
+
+
 
 .header-box
   padding: 0 25px
@@ -70,6 +108,10 @@ header
   border-left: 1px solid $text
   &:last-child
     padding-right: 0
+
+.schedule
+  font-size: 12px
+  margin: 8px auto 0
 
 .phone
   font-size: 26px

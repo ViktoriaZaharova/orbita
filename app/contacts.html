@@ -44,6 +44,12 @@
   </form>
 
   <div class="header-box">
+    <a href="tel:+74959885961" class="phone">
+      <span class="phone-code">(495)</span> 988-59-61
+    </a>
+  </div>
+
+  <div class="header-box">
     <a href="tel:+74935895822" class="phone">
       <span class="phone-code">(493)</span> 589-58-22
     </a>
@@ -68,60 +74,58 @@
 
 </div>
 
-<header>
+<header class="header">
   <div class="header-top">
     <div class="container">
       <ul class="home-menu">
-        <li class="home-menu__item"><a href="index.html" class="home-menu__links">Главная</a></li>
-        <li class="home-menu__item"><a href="#" class="home-menu__links">Туристам</a></li>
-        <li class="home-menu__item"><a href="#" class="home-menu__links">Агентствам</a></li>
+        <li class="home-menu__item"><a href="#" class="home-menu__links">ANTICOVID-19</a></li>
+        <li class="home-menu__item"><a href="contacts.html" class="home-menu__links">Контакты</a></li>
+        <li class="home-menu__item"><a href="#" class="home-menu__links">Как оплатить</a></li>
         <li class="home-menu__item"><a href="#" class="home-menu__links">О компании</a></li>
-        <li class="home-menu__item"><a href="#" class="home-menu__links">Контакты</a></li>
+        <li class="home-menu__item"><a href="#" class="home-menu__links">Турагентствам</a></li>
+        <li class="home-menu__item"><a href="#" class="home-menu__links">О Отзывы</a></li>
       </ul>
 
-      <form method="post" class="form-search">
-        <label><input type="text" placeholder="Поиск по сайту" required name="search"></label>
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
+
     </div>
   </div>
 
   <div class="header-center">
     <div class="container">
+
       <div class="logo-wrapper">
-        <a href="index.html" class="logo"><img src="img/logo-home.png" alt="">
+        <a href="index.html" class="logo"><img src="img/logotype-min.png" alt="">
           <span class="logo-text">туроператор по детскому
-и семейному туризму</span></a>
-        <div data-fake-link="https://www.russiatourism.ru/operators/show.php?id=101816" data-target="blank" title="Лицензия туроператора РТО 020539" class="fake-link">РТО 017880</div>
+и семейному туризму</span>
+        </a>
+        <a href="#" class="fake-link">РТО 017880</a>
       </div>
 
-      <div class="header-box-phone">
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Поиск по сайту" required name="search"></label>
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
 
-        <div class="header-box">
+      <div class="header-box-info">
+        <a href="tel:+74959885961" class="phone">
+          <span class="phone-code">+7 (495)</span> 589-58-22
+        </a>
+
+        <div class="schedule">С 09:00 до 21:00, без выходных</div>
+
+        <div class="header-box-info__footer">
           <ul class="list-message">
-            <li><a href="https://wa.me/+79255895822" target="_blank" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a></li>
-            <li><a href="https://t.me/+79255895822" target="_blank"><img src="img/telegram.svg" alt=""></a></li>
+            <li><a href="#"></a></li>
           </ul>
-          <a href="tel:+74935895822" class="phone">
-            <span class="phone-code">(493)</span> 589-58-22
+
+          <a href="#modal__callback" class="links-callback">
+            <span class="links-callback__icon"><i class="fas fa-phone"></i></span>
+            <span class="links-callback__text">Перезвонить вам</span>
           </a>
         </div>
-        <div class="schedule">С 09:00 до 21:00, без выходных</div>
       </div>
 
-      <div class="header-box">
-        <a href="#modal__callback" class="links-callback">
-          <span class="links-callback__icon"><i class="fas fa-phone"></i></span>
-          <span class="links-callback__text">Перезвонить вам</span>
-        </a>
-      </div>
 
-      <div class="header-box">
-        <a href="#modal__callback" class="links-callback links-callback-mail">
-          <span class="links-callback__icon"><i class="fas fa-envelope"></i></span>
-          <span class="links-callback__text">Написать письмо</span>
-        </a>
-      </div>
       <div class="btn-burger">
         <span></span>
         <span></span>
@@ -130,17 +134,6 @@
     </div>
   </div>
 
-  <div class="header-bottom">
-    <div class="container">
-      <ul class="menu">
-        <li class="menu-item"><a href="#" class="menu-links color-red">Новый год 2021</a></li>
-        <li class="menu-item"><a href="#" class="menu-links">Туры по россии</a></li>
-        <li class="menu-item"><a href="#" class="menu-links">Отдых на море</a></li>
-        <li class="menu-item"><a href="#" class="menu-links">Детский отдых в лагерях</a></li>
-        <li class="menu-item"><a href="#" class="menu-links">Школьные групповые туры</a></li>
-      </ul>
-    </div>
-  </div>
 </header>
 
 <main class="special-offers p-60">
@@ -150,77 +143,77 @@
     <div class="special-offers-wrapper w-100">
       <div class="special-offers-slider w-100">
         <div class="slide">
-          <div class="special-offers-slider__box">
+          <a href="#" class="special-offers-slider__box">
             <img src="img/img1.jpg" alt="">
-            <div class="special-offers-slider__content">
-                <div class="special-offers-slider__price">
+            <span class="special-offers-slider__content">
+                <span class="special-offers-slider__price">
                   <span>от</span> 15 000 <i class="fas fa-ruble-sign"></i>
-                </div>
-                <a href="#" class="special-offers-slider__title">
+                </span>
+                <span class="special-offers-slider__title">
                   Новогодние каникулы у Костромской
                 Снегурочки <span class="term">(3 дня, 2 ночи)</span>
-                </a>
-            </div>
-          </div>
+                </span>
+            </span>
+          </a>
         </div>
         <div class="slide">
-          <div class="special-offers-slider__box">
+          <a href="#" class="special-offers-slider__box">
             <img src="img/img2.jpg" alt="">
-            <div class="special-offers-slider__content">
-                <div class="special-offers-slider__price">
+            <span class="special-offers-slider__content">
+                <span class="special-offers-slider__price">
                   <span>от</span> 15 000 <i class="fas fa-ruble-sign"></i>
-                </div>
-                <a href="#" class="special-offers-slider__title">
+                </span>
+                <span class="special-offers-slider__title">
                   Новогодние каникулы у Костромской
                 Снегурочки <span class="term">(3 дня, 2 ночи)</span>
-                </a>
-            </div>
-          </div>
+                </span>
+            </span>
+          </a>
         </div>
         <div class="slide">
-          <div class="special-offers-slider__box">
+          <a href="#" class="special-offers-slider__box">
             <img src="img/img1.jpg" alt="">
-            <div class="special-offers-slider__content">
-                <div class="special-offers-slider__price">
+            <span class="special-offers-slider__content">
+                <span class="special-offers-slider__price">
                   <span>от</span> 15 000 <i class="fas fa-ruble-sign"></i>
-                </div>
-                <a href="#" class="special-offers-slider__title">
+                </span>
+                <span class="special-offers-slider__title">
                   Новогодние каникулы у Костромской
                 Снегурочки <span class="term">(3 дня, 2 ночи)</span>
-                </a>
-            </div>
-          </div>
+                </span>
+            </span>
+          </a>
         </div>
         <div class="slide">
-          <div class="special-offers-slider__box">
+          <a href="#" class="special-offers-slider__box">
             <img src="img/img2.jpg" alt="">
-            <div class="special-offers-slider__content">
-                <div class="special-offers-slider__price">
+            <span class="special-offers-slider__content">
+                <span class="special-offers-slider__price">
                   <span>от</span> 15 000 <i class="fas fa-ruble-sign"></i>
-                </div>
-                <a href="#" class="special-offers-slider__title">
+                </span>
+                <span class="special-offers-slider__title">
                   Новогодние каникулы у Костромской
                 Снегурочки <span class="term">(3 дня, 2 ночи)</span>
-                </a>
-            </div>
-          </div>
+                </span>
+            </span>
+          </a>
         </div>
       </div>
 
       <div class="special-offers-preview-slider w-100">
         <div class="slide">
-          <div class="special-offers-slider__box special-offers-slider__box-min">
+          <a href="#" class="special-offers-slider__box special-offers-slider__box-min">
             <img src="img/img3.jpg" alt="">
-            <div class="special-offers-slider__content">
-                <div class="special-offers-slider__price">
+            <span class="special-offers-slider__content">
+                <span class="special-offers-slider__price">
                   <span>от</span> 15 000 <i class="fas fa-ruble-sign"></i>
-                </div>
-                <a href="#" class="special-offers-slider__title">
+                </span>
+                <span class="special-offers-slider__title">
                   Новогодние каникулы у Костромской
                 Снегурочки <span class="term">(3 дня, 2 ночи)</span>
-                </a>
-            </div>
-          </div>
+                </span>
+            </span>
+          </a>
         </div>
         <div class="slide">
           <a href="#" class="special-offers-slider__box special-offers-slider__box-min">
@@ -277,7 +270,7 @@
 
     <div class="directions-company-wrapper w-100">
       <div class="directions-company__box">
-        <div class="h3">Отдых по видам года</div>
+        <h3>Отдых по видам года</h3>
         <ul class="types-of-recreation">
           <li>
             <a href="#">
@@ -330,7 +323,7 @@
 
 
       <div class="directions-company__box">
-        <div class="h3">Основные направления</div>
+        <h3>Основные направления</h3>
         <div class="list-directions">
           <a href="#" class="text-decoration">Туры в Казань</a>
           <a href="#" class="color-orange font-13">Туры по Европе</a>
@@ -351,7 +344,7 @@
       </div>
 
       <div class="directions-company__box directions-company__country">
-        <div class="h3">Страны</div>
+        <h3>Страны</h3>
 
         <ul class="list-country">
           <li>
@@ -473,120 +466,120 @@
     <div class="gallery-slider w-100">
       <div class="slide">
         <div class="gallery-slider-col">
-          <div class="gallery-slider__box special-offers-slider__box">
+          <a href="#" class="gallery-slider__box special-offers-slider__box">
             <img src="img/img1.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
+          </a>
           <div class="gallery-slider-row">
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            </a>
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="slide">
         <div class="gallery-slider-col">
-          <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+          <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
             <img src="img/img2.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
-          <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+          </a>
+          <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
             <img src="img/img2.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
-          <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+          </a>
+          <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
             <img src="img/img2.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
+          </a>
         </div>
       </div>
       <div class="slide">
         <div class="gallery-slider-col">
           <div class="gallery-slider-row">
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            </a>
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
+            </a>
           </div>
-          <div class="gallery-slider__box special-offers-slider__box">
+          <a href="#" class="gallery-slider__box special-offers-slider__box">
             <img src="img/img1.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
+          </a>
 
         </div>
       </div>
       <div class="slide">
         <div class="gallery-slider-col">
-          <div class="gallery-slider__box special-offers-slider__box">
+          <a href="#" class="gallery-slider__box special-offers-slider__box">
             <img src="img/img1.jpg" alt="">
             <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-          </div>
+          </a>
           <div class="gallery-slider-row">
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
-            <div class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
+            </a>
+            <a href="#" class="gallery-slider__box gallery-slider__box-min special-offers-slider__box">
               <img src="img/img2.jpg" alt="">
               <span class="special-offers-slider__content">
-                <a href="#" class="special-offers-slider__title">
+                <span class="special-offers-slider__title">
                   Россия
-                </a>
+                </span>
             </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -660,7 +653,7 @@
   <div class="footer-top">
     <div class="container">
       <div class="footer-box">
-        <div class="h4">Страны</div>
+        <h4>Страны</h4>
         <ul class="footer-menu">
           <li><a href="#">Россия</a></li>
           <li><a href="#">Европа</a></li>
@@ -676,7 +669,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="h4">Хиты продаж</div>
+        <h4>Хиты продаж</h4>
         <ul class="footer-menu">
           <li><a href="#">Великий Устюг</a></li>
           <li><a href="#">Лагеря Крыма</a></li>
@@ -697,7 +690,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="h4">Полезная информация</div>
+        <h4>Полезная информация</h4>
         <ul class="footer-menu">
           <li><a href="#">Туристам</a></li>
           <li><a href="#">Агентствам</a></li>
@@ -718,10 +711,10 @@
       </div>
 
       <div class="footer-box">
-        <div class="h4"><i class="fas fa-envelope"></i> Подпишитесь на нашу рассылку</div>
+        <h4><i class="fas fa-envelope"></i> Подпишитесь на нашу рассылку</h4>
 
         <form method="post" class="form-subscribe">
-          <div class="h5">Узнавайте первыми о наших акциях, скидках и спецпредложениях.</div>
+          <h5>Узнавайте первыми о наших акциях, скидках и спецпредложениях.</h5>
           <div class="form-group">
             <label>
               <input type="text" name="mail" placeholder="Ваш email" required>

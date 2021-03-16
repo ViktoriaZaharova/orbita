@@ -52,6 +52,9 @@
   font-weight: 700
   max-width: 400px
   margin: auto 0 0
+  color: #fff
+  &:hover
+    color: $orange
 
 .term
   font-size: 14px
@@ -85,6 +88,7 @@
   .links-accent
     padding: 20px 0 0 28px
 
+
 .directions-company__country
   &:before
     content: ''
@@ -110,6 +114,8 @@
       color: #000
       &:hover
         color: $accent
+        .country-name
+          text-decoration: none
 
 .country-flag
   min-width: 45px
@@ -140,6 +146,10 @@
       align-items: center
       justify-content: flex-start
       color: #000
+      &:hover
+        color: $accent
+        .types-of-recreation__text
+          text-decoration: none
   &__icon
     width: 45px
     min-width: 45px
@@ -159,10 +169,15 @@
     display: inline-block
     margin: 0 14px 20px 0
     color: #000
+    &:hover
+      color: $accent
+      text-decoration: none
     &:last-child
       margin-right: 0
   .color-accent
     color: $accent
+    &:hover
+      color: $orange
   .color-orange
     color: $orange
 

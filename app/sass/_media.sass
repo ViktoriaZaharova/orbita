@@ -122,6 +122,16 @@
   .advantages-wrapper, .information-content
     padding: 0 20px 0 0
 
+  .header-box-phone
+    border: none
+    margin: 0 auto
+    .header-box
+      margin: 0
+
+  .list-message
+    margin: 0 10px 0 0
+
+
 @media only screen and (max-width : 768px)
   .p-60
     padding: 40px 0
@@ -187,6 +197,8 @@
     .logo
       margin: 0 auto 10px
 
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .header-box-phone
@@ -240,12 +252,28 @@
         margin: 0 0 10px
         width: 100%
 
-@media only screen and (max-width : 480px)
+  .list-message
+    li
+      a
+        width: 24px
+        height: 24px
+      .whatsapp-link
+        width: 26px
+        height: 26px
+
   header
     .logo
       max-width: 100px
     .logo-text
       display: none
+
+  .fake-link
+    margin: 2px 0 0 0
+    font-size: 6px
+
+@media only screen and (max-width : 480px)
+  .schedule
+    font-size: 7px
 
   header .links-callback__icon
     width: 25px
@@ -265,6 +293,22 @@
   .gallery-slider__box-min
     height: 120px
 
+  .list-message
+    margin: 0 5px 0 0
+    li
+      a
+        width: 18px
+        height: 18px
+      .whatsapp-link
+        width: 20px
+        height: 20px
+
+
+
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 380px)
+	header
+    .list-message
+      display: none
+    .schedule
+      display: none
