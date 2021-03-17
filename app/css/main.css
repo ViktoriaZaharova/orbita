@@ -20,6 +20,13 @@
   src: url("../fonts/Tahoma/Tahoma-Bold.eot");
   src: url("../fonts/Tahoma/Tahoma-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma/Tahoma-Bold.woff") format("woff"), url("../fonts/Tahoma/Tahoma-Bold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Georgia/Georgia.eot");
+  src: url("../fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1707,6 +1714,60 @@ footer {
     color: #f4a700;
     text-align: left; }
 
+.gallery-text {
+  font-size: 13px;
+  padding: 5px;
+  margin: 13px 0;
+  text-indent: 20px;
+  line-height: 1.6; }
+  .gallery-text p {
+    margin: 0 0 20px; }
+  .gallery-text a {
+    color: #328ceb;
+    text-decoration: underline;
+    display: inline; }
+    .gallery-text a:hover {
+      color: #ff0000; }
+
+.gallery-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .gallery-wrapper .gallery-item {
+    max-width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-height: 103px;
+    overflow: hidden; }
+
+.gallery-item {
+  margin: 0 0 20px 0;
+  padding: 0 5px; }
+  .gallery-item img {
+    border: 1px solid #E6E6E6; }
+
+.small {
+  font-size: 25px;
+  color: #CD2727;
+  line-height: 1em;
+  margin-right: -0.7em;
+  position: relative;
+  float: left;
+  font-family: 'Georgia', sans-serif; }
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2214,7 +2275,10 @@ footer {
   .footer .copyright {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; } }
+            order: 2; }
+  .gallery-wrapper .gallery-item {
+    max-width: 33.3%;
+    max-height: 70px; } }
 
 @media only screen and (max-width: 480px) {
   .schedule {
