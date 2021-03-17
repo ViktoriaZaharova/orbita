@@ -1893,6 +1893,24 @@ footer {
   font-style: italic;
   margin: 0 0 0 5px; }
 
+.news-item {
+  font-size: 11px;
+  margin: 0 0 20px; }
+  .news-item p {
+    display: inline; }
+  .news-item__date {
+    color: #f2a400;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    display: inline-block; }
+  .news-item a {
+    display: inline-block;
+    color: #328ceb;
+    text-decoration: underline; }
+    .news-item a:hover {
+      color: #ff0000; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
