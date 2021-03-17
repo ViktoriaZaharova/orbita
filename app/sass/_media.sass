@@ -35,6 +35,9 @@
     margin: 0 auto
     text-align: center
 
+  .dropdown-menu
+    min-width: 700px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   header
@@ -49,7 +52,7 @@
 
   header
     .menu
-      font-size: 13px
+      font-size: 11px
     .phone
       font-size: 16px
     .phone-code
@@ -57,7 +60,7 @@
     .links-callback
       font-size: 11px
 
-  .header-bottom
+  .menu-links
     padding: 18px 0
 
   .header-center
@@ -89,6 +92,22 @@
 
   .footer-bottom
     padding: 50px 0 20px
+
+  .dropdown-menu
+    min-width: 500px
+
+  .dropdown-menu__box-content .dropdown-menu__item
+    max-width: none
+
+  .dropdown-menu__box-content
+    justify-content: flex-start
+    height: auto
+
+  .dropdown-menu__box-left
+    width: 220px
+
+  .dropdown-menu__box-right
+    width: calc(100% - 220px)
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 800px)
