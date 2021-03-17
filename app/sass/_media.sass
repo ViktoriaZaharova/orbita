@@ -38,6 +38,10 @@
   .dropdown-menu
     min-width: 700px
 
+  .footer .copyright
+    margin: 0
+    text-align: left
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   header
@@ -109,6 +113,12 @@
   .dropdown-menu__box-right
     width: calc(100% - 220px)
 
+  .header .form-search
+    max-width: 280px
+
+  .footer .copyright
+    max-width: 200px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 800px)
   .btn-burger
@@ -116,7 +126,7 @@
 
   header
     background: #fff
-    box-shadow: 4px 5px 23px 0px rgba(20,32,61,0.1)
+    box-shadow: 4px 5px 23px 0 rgba(20,32,61,0.1)
     .links-callback__text
       display: none
     .header-box
@@ -149,6 +159,19 @@
 
   .list-message
     margin: 0 10px 0 0
+
+  .header
+    padding: 10px 0
+    .btn-callback
+      .links-callback__text
+        display: block
+    .header-center
+      .container
+        border: none
+    .form-search
+      display: none
+    .phone
+      text-align: center
 
 
 @media only screen and (max-width : 768px)
@@ -216,9 +239,35 @@
     .logo
       margin: 0 auto 10px
 
+  .tabs-list-content__box .h3
+    margin: 0 0 15px
 
+  .tabs-list-content__box ul
+    padding: 6px 0 18px 20px
+
+  .tabs-list-content__box
+    margin: 20px 0 0
+
+  .footer
+    -webkit-background-size: 1200px
+    background-size: 1200px
+    padding: 180px 0 10px
+
+  .footer .copyright
+    margin: 10px auto 0
+    max-width: none
+    width: 100%
+    text-align: center
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 680px)
+  .sidebar
+    display: none
+
+  .page-content
+    width: 100%
+    padding: 0
+
 @media only screen and (max-width : 576px)
   .header-box-phone
     flex-direction: column
@@ -290,6 +339,19 @@
     margin: 2px 0 0 0
     font-size: 6px
 
+  .footer
+    .container
+      flex-direction: column
+      align-items: center
+    .list-social
+      order: 1
+      margin: 10px auto 0
+    .address
+      max-width: none
+      text-align: center
+    .copyright
+      order: 2
+
 @media only screen and (max-width : 480px)
   .schedule
     font-size: 7px
@@ -322,7 +384,13 @@
         width: 20px
         height: 20px
 
-
+  .btn-callback
+    width: 120px
+    font-size: 10px
+    height: 25px
+    .links-callback__icon
+      width: 20px
+      min-width: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 380px)
