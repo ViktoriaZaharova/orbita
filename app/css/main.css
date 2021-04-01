@@ -249,6 +249,13 @@ button {
     max-width: 115px;
     text-align: right; }
 
+h1, .h1 {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  margin: 0 auto 30px; }
+
 h2, .h2 {
   width: 100%;
   text-align: center;
@@ -1995,6 +2002,54 @@ footer {
     .news-item a:hover {
       color: #ff0000; }
 
+.list-document {
+  margin: 0 0 40px;
+  font-size: 14px; }
+  .list-document li a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline; }
+    .list-document li a:hover {
+      color: #ff0000; }
+
+.document-box {
+  width: 100%;
+  margin: 0 0 20px; }
+  .document-box__head {
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0 5px;
+    margin: 0 0 10px; }
+  .document-box h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #f4a700;
+    font-weight: bold; }
+  .document-box__body {
+    font-size: 13px; }
+  .document-box h4 {
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    margin: 25px 0;
+    border-bottom: 1px  dotted #ccc; }
+
+.list-contract {
+  width: 100%;
+  padding: 0 5px 0 20px; }
+  .list-contract li {
+    margin: 13px 0;
+    padding: 5px; }
+    .list-contract li a {
+      display: inline-block; }
+    .list-contract li span {
+      display: inline;
+      margin: 0 5px; }
+
+.contract-links {
+  color: #328ceb;
+  text-decoration: underline; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2141,6 +2196,8 @@ footer {
     font-size: 30px; }
   h3 {
     font-size: 22px; }
+  h1, .h1 {
+    font-size: 34px; }
   .directions-company__box {
     width: 100%;
     margin: 0 0 30px;
@@ -2230,6 +2287,8 @@ footer {
             align-items: flex-start; }
   h2 {
     font-size: 24px; }
+  h1, .h1 {
+    font-size: 26px; }
   h3 {
     font-size: 18px; }
   .slick-arrow {
