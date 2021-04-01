@@ -229,6 +229,14 @@ button {
     background: #b73025;
     color: #fff; }
 
+.btn-blue {
+  background: #007cb9;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 14px;
+  text-transform: none;
+  text-align: left; }
+
 .logo {
   max-width: 242px;
   position: relative;
@@ -249,7 +257,7 @@ button {
     max-width: 115px;
     text-align: right; }
 
-h1, .h1 {
+h1 {
   width: 100%;
   text-align: center;
   position: relative;
@@ -1560,7 +1568,95 @@ footer {
 
 .page-content {
   width: calc(100% - 220px);
-  padding: 0 0 0 30px; }
+  padding: 0 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-content__tour {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-content__wrap {
+  width: calc(100% - 220px);
+  padding: 0 25px 0 0; }
+
+.tour-price {
+  width: 220px;
+  border: 1px solid #ddd;
+    border-radius: 6px;
+  padding: 10px;
+  background: #fbfbfb;
+  font-size: 12px; }
+  .tour-price h3 {
+    margin: 0;
+    font-size: 15px; }
+  .tour-price__body {
+    margin: 5px 0 0;
+    padding: 5px;
+    border-top: 1px solid #ddd; }
+    .tour-price__body p {
+      margin: 0 0 10px; }
+      .tour-price__body p:last-child {
+        margin: 0; }
+      .tour-price__body p a {
+        display: inline;
+        color: #0077f5; }
+  .tour-price__head {
+    padding: 5px; }
+    .tour-price__head strong {
+      font-size: 11px; }
+
+.btn-reservation {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 20px auto;
+  background: #0077f5; }
+  .btn-reservation span {
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal; }
+
+.price-wrapper {
+  margin: 0 0 20px; }
+
+.price {
+  color: #b73025;
+  font-weight: bold;
+  margin: 20px 0 5px;
+  font-size: 18px; }
+
+.date-tour-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 7px 5px;
+  font-size: 12px;
+  margin: 5px 0; }
+  .date-tour-item .svg-icon {
+    width: 12px;
+    height: 12px;
+    min-width: 15px;
+    margin: 0 5px 0 0;
+    fill: #b0b0b0; }
 
 .sidebar {
   width: 220px;
@@ -2050,6 +2146,135 @@ footer {
   color: #328ceb;
   text-decoration: underline; }
 
+.sight-img {
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  max-width: 500px; }
+  .sight-img img {
+    width: 100%; }
+
+.sight-box {
+  margin: 30px 0 0;
+  padding: 0 0 0 20px; }
+  .sight-box h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f4a700;
+    margin: 0; }
+  .sight-box__body {
+    font-size: 13px; }
+    .sight-box__body p {
+      padding: 5px;
+      text-indent: 20px;
+      line-height: 20px;
+      margin: 13px 0; }
+    .sight-box__body a {
+      display: inline;
+      color: #328ceb; }
+    .sight-box__body strong {
+      display: inline; }
+    .sight-box__body h3 {
+      margin: 25px 0;
+      border-bottom: 1px  dotted #ccc;
+      font-size: 14px;
+      font-weight: bold;
+      color: #006699;
+      padding: 10px 0; }
+    .sight-box__body ul {
+      margin: 10px 0;
+      padding: 6px 0 18px 30px; }
+      .sight-box__body ul li {
+        margin-left: 21px;
+        padding: 4px 0 4px 6px; }
+
+.sight-box__head {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px 0 5px;
+  background: #ffffb1; }
+
+.sight-img-map {
+  max-width: 300px; }
+
+.color-green {
+  color: green; }
+
+.route {
+  height: 450px;
+  max-width: 600px;
+  width: 100%; }
+  .route iframe {
+    width: 100%;
+    height: 100%; }
+
+.tour-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 15px;
+  font-size: 15px; }
+  .tour-menu li {
+    margin: 0 5px 5px 0; }
+    .tour-menu li:last-child {
+      margin-right: 0; }
+    .tour-menu li a {
+      text-align: center;
+      border-radius: 8px;
+      padding: 9px 16px;
+      background: #70B0FF;
+      color: #fff; }
+      .tour-menu li a:hover {
+        -webkit-box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
+                box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 1px 1px 2px #000; }
+    .tour-menu li .click {
+      -webkit-box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
+              box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
+      text-shadow: 1px 1px 2px #000; }
+
+.style-italic {
+  display: block;
+  font-style: italic; }
+
+.sight-box__body .list-program {
+  line-height: 18px;
+  padding: 0; }
+  .sight-box__body .list-program li {
+    margin: 13px 0;
+    padding: 5px 1px 7px;
+    border-bottom: 1px dashed #767676; }
+  .sight-box__body .list-program p {
+    text-indent: 0;
+    margin: 0 0 10px; }
+
+.list-program {
+  width: 100%; }
+  .list-program li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.day-program {
+  min-width: 130px;
+  color: #007cb9; }
+
+.content-program {
+  width: calc(100% - 130px); }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2196,7 +2421,7 @@ footer {
     font-size: 30px; }
   h3 {
     font-size: 22px; }
-  h1, .h1 {
+  h1 {
     font-size: 34px; }
   .directions-company__box {
     width: 100%;
@@ -2266,7 +2491,13 @@ footer {
     width: 100%;
     margin: 0 0 30px; }
   .wrapper-col-right {
-    width: 100%; } }
+    width: 100%; }
+  .sight-box {
+    padding: 0; }
+  .sight-box__body ul {
+    padding: 6px; }
+  .sight-box__body p {
+    text-indent: 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px) {
@@ -2287,7 +2518,7 @@ footer {
             align-items: flex-start; }
   h2 {
     font-size: 24px; }
-  h1, .h1 {
+  h1 {
     font-size: 26px; }
   h3 {
     font-size: 18px; }

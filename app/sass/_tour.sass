@@ -1,0 +1,59 @@
+@import "vars"
+
+.tour-menu
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 20px 0 15px
+  font-size: 15px
+  li
+    margin: 0 5px 5px 0
+    &:last-child
+      margin-right: 0
+    a
+      text-align: center
+      border-radius: 8px
+      padding: 9px 16px
+      background: #70B0FF
+      color: #fff
+      &:hover
+        box-shadow: inset 1px 2px 3px 2px rgba(#000, .1)
+        text-shadow: 1px 1px 2px #000
+    .click
+      box-shadow: inset 1px 2px 3px 2px rgba(#000, .1)
+      text-shadow: 1px 1px 2px #000
+
+.style-italic
+  display: block
+  font-style: italic
+
+.sight-box__body
+  .list-program
+    line-height: 18px
+    padding: 0
+    li
+      margin: 13px 0
+      padding: 5px 1px 7px
+      border-bottom: 1px dashed #767676
+
+    p
+      text-indent: 0
+      margin: 0 0 10px
+
+
+.list-program
+  width: 100%
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+
+.day-program
+  min-width: 130px
+  color: #007cb9
+
+
+.content-program
+  width: calc(100% - 130px)
