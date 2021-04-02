@@ -28,12 +28,31 @@
   display: block
   font-style: italic
 
+.sight-box
+  width: 100%
+  .route
+    max-width: none
+  .gallery-item
+    max-height: none
+    height: 115px
+    max-width: 20%
+    padding: 0 2px
+    margin: 0 0 4px
+
+    img
+      border: 1px solid #70B0FF
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+
 .sight-box__body
+  padding: 10px 0
   .list-program
     line-height: 18px
     padding: 0
     li
-      margin: 13px 0
+      margin: 7px 0
       padding: 5px 1px 7px
       border-bottom: 1px dashed #767676
 
@@ -57,3 +76,273 @@
 
 .content-program
   width: calc(100% - 130px)
+
+.action-file
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      color: #007cb9
+
+.action-file-icon
+  width: 20px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 10px 0 0
+  fill: #444
+
+.action-file-text
+  text-decoration: underline
+
+.date-tour
+  p
+    margin: 0
+    padding: 0
+    text-indent: 0
+  span
+    margin: 20px 0 0
+    display: inline-block
+
+.table-responsive
+  width: 100%
+  overflow-x: auto
+
+.table
+  width: 100%
+  margin: 0 0 20px
+  font-size: 14px
+
+td
+  border: 1px solid #444
+  padding: 10px 15px
+
+thead
+  text-align: center
+  font-size: 15px
+  font-weight: bold
+  color: #333
+  background: #b4ffc0
+
+.td-price
+  text-align: center
+  font-size: 16px
+
+.price-tour-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  .box-text
+    width: calc(100% - 200px)
+    span
+      display: block
+      margin: 0 0 20px
+    strong
+      span
+        margin: 0
+        display: inline
+        font-size: 16px
+  .btn-reservation
+    max-width: 180px
+    margin: 0 0 0 auto
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: center
+    color: #fff
+    span
+      display: block
+
+.sight-box-slider
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.slider-gallery-preview
+  width: 230px
+  padding: 0 0 0 30px
+  .slider-gallery-max__item
+    height: 125px
+    display: flex
+    font-size: 12px
+    opacity: .6
+    margin: 0 0 3px
+  .slick-current
+    .slider-gallery-max__item
+      opacity: 1
+
+.slider-gallery-max
+  width: calc(100% - 230px)
+  .slider-gallery-max__item
+    cursor: pointer
+    display: flex
+  .slick-next
+    right: 0
+    border-radius: 4px 0 0 4px
+  .slick-prev
+    left: 0
+    border-radius: 0 4px 4px 0
+  .slick-arrow
+    background: rgba(0, 0, 0, 0.5)
+    border: 1px solid #777
+    padding: 10px
+
+
+.slider-gallery-max__item
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: 100%
+  height: 385px
+  color: #328ceb
+  font-size: 16px
+  .name
+    font-weight: bold
+  .date
+    display: block
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.slider-gallery__content
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 1
+  padding: 12px
+  background: rgba(0, 0, 0, 0.7)
+
+.tour-row
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.tour-card
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  p
+    text-indent: 0
+
+.tour-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #E6E6E6
+  background: #fff
+
+.tour-card__title
+  text-decoration: underline
+  font-weight: bold
+  color: #328ceb
+  display: block
+  margin: 0 0 10px
+
+.form-callback
+  border: 1px solid #c5c5c5
+    radius: 5px 15px 5px 15px
+  background: #f7f7f7
+  width: 100%
+  padding: 8px
+  font-size: 12px
+  label
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 6px
+    .description
+      width: 100%
+      display: flex
+      align-items: center
+      font-size: 9px
+      color: grey
+      margin: 5px 0 0
+      .text
+        min-width: 71px
+        font-style: italic
+  input
+    border: 1px solid #DDD
+      radius: 3px 9px 3px 9px
+    height: 25px
+    padding: 4px
+    max-width: 300px
+  .input-text
+    min-width: 71px
+    font-weight: bold
+    width: fit-content
+  sup
+    color: $red
+  .form-group
+    margin: 0 0 20px
+    flex-wrap: wrap
+    &:last-child
+      margin: 0
+    strong
+      margin: 0 0 10px
+      width: 100%
+      display: block
+  textarea
+    overflow-y: scroll
+    height: 120px
+    border-radius: 8px
+    padding: 4px
+    border: 1px solid #DDD
+
+.recaptcha
+  padding: 0 0 0 71px
+  margin: 0 0 15px
+
+.select-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .select-group
+    width: auto
+  select
+    border: 1px solid #DDD
+      radius: 3px 9px 3px 9px
+    padding: 4px
+    appearance: auto
+    box-sizing: border-box
+  p
+    margin: 0 10px 0 5px
+    &:first-child
+      margin-left: 0
+
+.slash
+  margin: 0 5px 5px
+
+
+.btn-disable
+  background: #AAA
+  padding: 8px
+  max-width: 140px
+  margin: 0 0 0 auto
+  border-radius: 4px 12px 4px 12px
+  border: 1px solid #DDD
+  text-transform: none
+  color: #fff
+  height: 33px
+  &:hover
+    background: #DDD
+
+
