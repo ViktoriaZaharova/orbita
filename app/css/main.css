@@ -1947,11 +1947,12 @@ footer {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray; }
 
-.contacts-info p {
-  display: inline; }
-
-.contacts-info .h4 {
-  font-size: 16px; }
+.contacts-info {
+  width: 100%; }
+  .contacts-info p {
+    display: inline; }
+  .contacts-info .h4 {
+    font-size: 16px; }
 
 .wrapper-row {
   width: 100%;
@@ -2650,6 +2651,271 @@ thead {
   height: 33px; }
   .btn-disable:hover {
     background: #DDD; }
+
+.page-tour .contacts-info {
+  margin: 20px 0 0;
+  font-size: 14px;
+  padding: 20px 0;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3; }
+
+.page-tour-catalog__box {
+  font-size: 14px;
+  width: 100%; }
+  .page-tour-catalog__box .box-text {
+    margin: 0 0 20px; }
+    .page-tour-catalog__box .box-text p {
+      text-indent: 20px;
+      margin: 0 0 20px; }
+      .page-tour-catalog__box .box-text p:last-child {
+        margin: 0; }
+      .page-tour-catalog__box .box-text p a {
+        display: inline; }
+  .page-tour-catalog__box ul {
+    margin: 0 0 20px; }
+    .page-tour-catalog__box ul li {
+      margin: 0 0 8px; }
+  .page-tour-catalog__box .sorting-catalog-list li {
+    margin-right: 10px; }
+
+.sorting-catalog {
+  padding: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0; }
+  .sorting-catalog h3 {
+    font-size: 16px;
+    font-weight: bold; }
+
+.sorting-catalog-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 0; }
+  .sorting-catalog-list li {
+    margin: 0 10px 5px 0; }
+    .sorting-catalog-list li:last-child {
+      margin: 0 0 5px; }
+    .sorting-catalog-list li a {
+      text-decoration: underline;
+      color: #000; }
+
+.tabs-list-content__box {
+  width: 100%; }
+
+.page-tour-catalog .box-text {
+  font-size: 14px; }
+
+.tour-box {
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 14px; }
+
+.tour-box__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 10px; }
+
+.tour-box__title {
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  text-decoration: underline;
+  color: #328ceb; }
+
+.cash {
+  color: red; }
+
+.tour-box-transport {
+  margin: 0 0 0 auto;
+  color: #0052a8;
+  font-size: 12px; }
+
+.tour-box__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 560px;
+  margin: 10px 0 0; }
+
+.btn-orange {
+  color: #fff;
+  background: #FCB832;
+  font-size: 14px;
+  height: 24px;
+  max-width: 120px;
+  text-transform: none;
+  padding: 0;
+  border-radius: 0; }
+  .btn-orange:hover {
+    color: #000; }
+
+.links-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #328ceb;
+  font-size: 11px; }
+
+.links-details-icon {
+  width: 13px;
+  height: 8px;
+  fill: #FCB832;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.links-details-text {
+  text-decoration: underline; }
+
+.tour-box__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.tour-box__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 155px;
+  width: 100%; }
+
+.tour-box__content {
+  width: calc(100% - 155px);
+  padding: 0 0 0 10px; }
+
+.tour-box__info li {
+  margin: 0 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .tour-box__info li:last-child {
+    margin: 0; }
+  .tour-box__info li p {
+    color: #585858;
+    font-weight: bold;
+    min-width: 100px; }
+
+.tour-box__info-date {
+  color: #008000; }
+
+.way {
+  color: #818181;
+  font-size: 12px;
+  margin: 0 0 10px; }
+
+.value-days-tour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  font-size: 14px; }
+  .value-days-tour a {
+    text-decoration: underline;
+    color: #333; }
+    .value-days-tour a:after {
+      content: '|';
+      display: inline-block;
+      margin: 0 3px; }
+  .value-days-tour p {
+    margin: 0 10px 0 0; }
+
+.list-num {
+  list-style: decimal;
+  padding: 0 0 0 20px; }
+
+.page-tour-catalog__box-head {
+  margin: 25px 0 25px 0;
+  border-bottom: 1px  dotted #ccc;
+  padding: 10px 0;
+  color: #006699;
+  font-weight: bold; }
+
+.video-frame, .map-way {
+  width: 100%;
+  height: 400px; }
+  .video-frame iframe, .map-way iframe {
+    width: 100%;
+    height: 100%; }
+
+.help-information {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .help-information h3 {
+    font-size: 16px;
+    margin: 0 0 10px; }
+
+.help-information-item {
+  width: 50%;
+  border-right: 2px dotted #ccc; }
+  .help-information-item:last-child {
+    border: none;
+    padding: 0 0 0 30px; }
+
+.list-help-information li {
+  margin: 0 0 5px; }
+  .list-help-information li a {
+    text-decoration: underline;
+    color: #328ceb; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
