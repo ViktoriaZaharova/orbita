@@ -3287,7 +3287,12 @@ thead {
   .sight-box {
     margin: 20px 0 0; }
   .tour-card {
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .help-information-item {
+    width: 100%;
+    border: none; }
+    .help-information-item:last-child {
+      padding: 0; } }
 
 @media only screen and (max-width: 480px) {
   .schedule {
@@ -3319,7 +3324,16 @@ thead {
     height: 25px; }
     .btn-callback .links-callback__icon {
       width: 20px;
-      min-width: 20px; } }
+      min-width: 20px; }
+  .tour-box__content {
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 0; }
+  .tour-box__img {
+    width: 100%;
+    margin: 0 auto; }
+  .value-days-tour {
+    margin: 10px 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 380px) {
