@@ -1,12 +1,16 @@
 @import "vars"
 
 .wrapper
+  font-family: $tahoma
   background: url("../img/footer-bg-wrap.png") 0 bottom repeat-x
   .container
     max-width: 1070px
   .phone
     color: #328ceb
-  font-family: $tahoma
+    text-align: center
+  h1, h2, .h2, .h1
+    font-family: 'Verdana', sans-serif
+
 
 .header
   margin: 0 0 20px
@@ -100,7 +104,7 @@
       width: 80px
 
 .page
-  margin: 0 0 20px
+  margin: 0 0 -40px
   .container
     align-items: flex-start
 
@@ -128,7 +132,7 @@
   padding: 10px
   background: #fbfbfb
   font-size: 12px
-  h3
+  h3, .h3
     margin: 0
     font-size: 15px
   &__body
@@ -144,7 +148,7 @@
         color: #0077f5
   &__head
     padding: 5px
-    strong
+    strong, .strong
       font-size: 11px
 
 .btn-reservation
@@ -160,6 +164,12 @@
     text-transform: none
     font-size: 12px
     font-weight: normal
+  .strong
+    z-index: 14
+    font-weight: bold
+    text-transform: uppercase
+  &:hover
+    background: $accent
 
 .price-wrapper
   margin: 0 0 20px
@@ -433,4 +443,83 @@
     display: inline
   .h4
     font-size: 16px
+
+.share-list
+  top: 50%
+  transform: translate(0,-50%)
+  left: 0
+  z-index: 2
+  position: fixed
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+
+.share-links
+  width: 48px
+  height: 48px
+  color: #fff
+  display: flex
+  align-items: center
+  padding: 12px
+  overflow: hidden
+  font-size: 12px
+  font-family: 'Verdana', sans-serif
+  font-weight: bold
+  &:first-child
+    border-radius: 0 17px 0 0
+  &:last-child
+    border-radius: 0 0 17px 0
+  &:hover
+    width: 120px
+    .share-list-text
+      opacity: 1
+    img
+      margin-left: 5px
+  img
+    height: 24px
+    width: 24px
+    transition: .3s ease
+
+.share-links-fb
+  background: #4267B2
+
+.share-links-tw
+  background: #55acee
+
+.share-links-vk
+  background: #4c6c91
+
+.share-links-ok
+  background: #d7772d
+
+.share-links-ws
+  background: #25d366
+
+.share-links-print
+  background: #222222
+
+.share-links-share
+  background: #95D03A
+
+.share-links-mail
+  background: #7d7d7d
+
+.share-list-text
+  opacity: 0
+  transition: .3s ease
+  font-weight: 500
+  padding: 0 6px
+  letter-spacing: 0.5px
+
+.btn-search-mobile
+  width: 16px
+  height: 16px
+  display: none
+  align-items: center
+  justify-content: center
+  margin: 0 15px 0 0
+  fill: $accent
+
+
 

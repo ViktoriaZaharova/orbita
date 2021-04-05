@@ -168,10 +168,27 @@
     .header-center
       .container
         border: none
-    .form-search
-      display: none
     .phone
       text-align: center
+
+  .header-box-info
+    margin: 0 auto
+
+  .btn-search-mobile
+    display: flex
+
+  .header .form-search
+    display: none
+    position: absolute
+    left: 0
+    top: 100%
+    width: 100%
+    padding: 10px
+    z-index: 2
+    max-width: none
+    background: #fff
+    button
+      right: 20px
 
   .page-content__tour
     flex-direction: column
@@ -314,6 +331,7 @@
     width: 100%
 
 
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 680px)
   .sidebar
@@ -322,6 +340,9 @@
   .page-content
     width: 100%
     padding: 0
+
+  .share-list
+    display: none
 
 @media only screen and (max-width : 576px)
   .header-box-phone
@@ -489,6 +510,7 @@
   .tour-box__img
     width: 100%
     margin: 0 auto
+    max-width: none
 
   .value-days-tour
     margin: 10px 0 0

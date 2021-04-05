@@ -295,7 +295,7 @@ thead
     flex-wrap: wrap
     &:last-child
       margin: 0
-    strong
+    strong, .strong
       margin: 0 0 10px
       width: 100%
       display: block
@@ -367,6 +367,8 @@ thead
         margin: 0
       a
         display: inline
+      strong, .strong
+        display: inline
   ul
     margin: 0 0 20px
     li
@@ -398,6 +400,8 @@ thead
     a
       text-decoration: underline
       color: #000
+      &:hover
+        color: $accent
 
 .tabs-list-content__box
   width: 100%
@@ -485,6 +489,8 @@ thead
   justify-content: center
   max-width: 155px
   width: 100%
+  img
+    width: 100%
 
 .tour-box__content
   width: calc(100% - 155px)
@@ -508,7 +514,7 @@ thead
 
 .way
   color: #818181
-  font-size: 12px
+  font-size: 14px
   margin: 0 0 10px
 
 .value-days-tour

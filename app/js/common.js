@@ -147,6 +147,11 @@ $('.tabs-list li a').each(function () {
 });
 // end
 
+$('.btn-search-mobile').on('click', function (e) {
+    e.preventDefault();
+    $('.header .form-search').fadeToggle();
+});
+
 $('.btn-view').on('click', function (e) {
     e.preventDefault();
     $(this).addClass('clicked').parent().find('.list-hidden li:hidden').slideDown();
