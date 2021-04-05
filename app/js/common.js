@@ -147,6 +147,8 @@ $('.tabs-list li a').each(function () {
 });
 // end
 
+svg4everybody();
+
 $('.btn-search-mobile').on('click', function (e) {
     e.preventDefault();
     $('.header .form-search').fadeToggle();

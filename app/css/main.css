@@ -1576,12 +1576,10 @@ footer {
     .list-social li .links-pay {
       width: 80px; }
 
-.page {
-  margin: 0 0 -40px; }
-  .page .container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+.page .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .page-content {
   width: calc(100% - 220px);
@@ -2211,18 +2209,17 @@ footer {
   margin: 0 0 0 5px; }
 
 .news-item {
-  font-size: 11px;
+  font-size: 14px;
   margin: 0 0 20px; }
   .news-item p {
     display: inline; }
   .news-item__date {
     color: #f2a400;
-    font-size: 11px;
     font-weight: bold;
     margin: 0 5px 0 0;
     display: inline-block; }
   .news-item a {
-    display: inline-block;
+    display: inline;
     color: #328ceb;
     text-decoration: underline; }
     .news-item a:hover {
@@ -2834,7 +2831,11 @@ thead {
   width: 100%; }
 
 .page-tour-catalog .box-text {
-  font-size: 14px; }
+  font-size: 13px;
+  line-height: 20px;
+  font-family: 'Tahoma', sans-serif; }
+  .page-tour-catalog .box-text p {
+    padding: 5px; }
 
 .tour-box {
   width: 100%;
@@ -2954,20 +2955,22 @@ thead {
   width: calc(100% - 155px);
   padding: 0 0 0 10px; }
 
-.tour-box__info li {
-  margin: 0 0 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .tour-box__info li:last-child {
-    margin: 0; }
-  .tour-box__info li p {
-    color: #585858;
-    font-weight: bold;
-    min-width: 100px; }
+.tour-box__info {
+  font-family: 'Verdana', sans-serif; }
+  .tour-box__info li {
+    margin: 0 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .tour-box__info li:last-child {
+      margin: 0; }
+    .tour-box__info li p {
+      color: #585858;
+      font-weight: bold;
+      min-width: 100px; }
 
 .tour-box__info-date {
   color: #008000; }
@@ -2975,7 +2978,8 @@ thead {
 .way {
   color: #818181;
   font-size: 14px;
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+  font-family: 'Tahoma', sans-serif; }
 
 .value-days-tour {
   display: -webkit-box;
