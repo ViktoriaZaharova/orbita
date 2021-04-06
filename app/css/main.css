@@ -489,7 +489,8 @@ h3, .h3 {
       z-index: -1;
       background: #f3f4f6; }
   .mobile-menu .menu-links {
-    padding: 0; }
+    padding: 0;
+    text-transform: none; }
   .mobile-menu .dropdown-menu {
     min-width: auto;
     position: relative;
@@ -1537,6 +1538,9 @@ footer {
     text-align: center; }
   .wrapper h1, .wrapper h2, .wrapper .h2, .wrapper .h1 {
     font-family: 'Verdana', sans-serif; }
+  .wrapper .mobile-menu .home-menu__links {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 13px; }
 
 .header {
   margin: 0 0 20px;
@@ -1575,6 +1579,8 @@ footer {
               box-shadow: 0 0 5px 5px #fff;
       border: 1px solid #DDD;
         border-radius: 5px; }
+  .header .links-callback-mail {
+    display: none; }
 
 .header-box-info__footer {
   display: -webkit-box;
@@ -3484,12 +3490,25 @@ thead {
   .list-message li .whatsapp-link {
     width: 26px;
     height: 26px; }
+  .logo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   header .logo {
-    max-width: 100px; }
+    max-width: 120px; }
   header .logo-text {
-    display: none; }
+    bottom: -12px;
+    text-align: left;
+    line-height: 1; }
+  .btn-burger {
+    margin: 0 0 20px; }
   .fake-link {
-    margin: 2px 0 0 0;
+    margin: 13px 0 0 0;
     font-size: 6px; }
   .footer .container {
     -webkit-box-orient: vertical;
@@ -3579,8 +3598,40 @@ thead {
     margin: 10px 0 0; } }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 420px) {
+  header .logo {
+    max-width: 100px; } }
+
 @media only screen and (max-width: 380px) {
   header .list-message {
     display: none; }
   header .schedule {
-    display: none; } }
+    display: none; }
+  header .header-box-phone {
+    margin: 0 auto 20px; }
+  header .header-box {
+    margin: 0 7px 20px 0; }
+  .header .phone {
+    font-size: 11px; }
+  .header .links-callback-mail {
+    width: 25px;
+    height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header .btn-callback {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; }
+    .header .btn-callback .links-callback__text {
+      display: none; }
+  .header .header-box-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 5px 20px auto; }
+  .header .header-box-info__footer {
+    margin: 0 7px; } }
