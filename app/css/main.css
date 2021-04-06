@@ -3504,7 +3504,8 @@ thead {
   header .logo-text {
     bottom: -12px;
     text-align: left;
-    line-height: 1; }
+    line-height: 1;
+    left: 0; }
   .btn-burger {
     margin: 0 0 20px; }
   .fake-link {
