@@ -147,6 +147,10 @@ $('.tabs-list li a').each(function () {
 });
 // end
 
+$('.dropdown-btn').on('click', function () {
+    $(this).siblings('.dropdown-menu').fadeToggle();
+});
+
 svg4everybody();
 
 $('.btn-search-mobile').on('click', function (e) {
@@ -171,3 +175,4 @@ $('.go_to').click(function (e) {
     }
     return false;
 });
+
